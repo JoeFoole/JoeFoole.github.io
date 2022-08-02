@@ -1,0 +1,76 @@
+.container {
+        display: grid;
+        max-width:1200px;
+        position: relative;
+        margin: auto;
+        gap: 10px;
+        border: 1px solid black;
+        grid-template-areas: "header header"
+                                        "nav footer"
+                                        "left footer"
+                                        "left right"
+                                        "core right";
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 100px 100px 320px 580px 420px;
+                 }
+
+header{
+        background-color: dodgerblue;
+        grid-area: header;
+        text-align: center;
+           }
+
+.page-links { text-align: start; }
+
+nav {
+         background-color: tan;
+         grid-area: nav;
+        }
+
+.quality {
+              font-family: "Segoe Script";
+              font-size: 30px;
+              line-height: 10px;
+              text-align: center;
+            }
+
+.left {
+         background-color: dodgerblue;
+         grid-area: left;
+         color: beige;
+         font-weight: bold;
+         font-size: 14px;
+         font-family: "Comic Sans MS";
+         text-align: center;  
+       }
+
+.right {
+           background-color: beige;
+           grid-area: right;
+         }
+
+.core {
+          background-color: tan;
+          grid-area: core;
+          text-align: center;
+         }
+
+table { display: flex;
+           align-items: center;
+           justify-content: center;     }
+
+li {  font-style: italic;
+      font-weight: bold;
+      font-family: "Segoe Print"; }
+
+td {  border: 1px solid black;
+       padding: 5px;
+       height: 5px; }
+
+th { text-align: center; }
+
+footer {
+            grid-area: footer;
+          }
+
+img { width: 600px;}
